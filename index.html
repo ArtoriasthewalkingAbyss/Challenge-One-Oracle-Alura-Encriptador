@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/reset.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <div class="pg">
+        <header class="cabeza">
+            <div class="div-logo">
+                <img class="img-logo" src="img/Vector.png" alt="Logo-alura">
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="sec-txta-encrp-desen">
+                <div class="div-txta-encrp-desen">
+                    <textarea id="txta-encrp-desen"  name="Encriptar-Desencriptar" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="condicion">
+                    <p>Solo letras minúsculas sin acentos y sin caracteres especiales</p>
+                </div>
+                <div class="div-btn">
+                    <button class="btn-encriptador" onclick="encriptar()">Encriptar</button>
+                    <button class="btn-desencriptador" onclick="descencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="sec-txta-devolucion">
+                <div class="div-img-dibujo">
+                    <img id="img-dibujo" src="img/Muñeco.png" alt=""> <!-- poner un alt -->
+                    
+                    <h2 id="titulo-devolucion">Ningún mensaje fue encontrado</h2>
+                    
+                    <p id="p-devolucion">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+
+                <div class="div-txta-devolucion-btn">
+                    <div class="div-txta-resultado">
+                        <textarea id="txta-devolucion" name="mostrar-resultado" disabled></textarea>
+                    </div>
+
+                    <div class="div-btn-copiar">
+                        <button id="btn-copiar">Copiar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="pie-de-paguina">
+            
+        </footer>
+    </div>
+    <script src="js/funciones.js"></script>
+    </body>
+</html>

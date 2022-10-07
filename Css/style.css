@@ -1,0 +1,258 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: -moz-radial-gradient(center, #8f037a 0%, #852DB6 50%, #1333FF 100%);
+    background: -webkit-radial-gradient(center, #8f037a  0%, #852DB6 50%, #1333FF 100%);
+    background: radial-gradient(ellipse at center, #8f037a  0%, #852DB6 50%, #1333FF 100%);
+    background-size: 400% 400%;
+    animation: expandir 10s ease infinite;
+}
+
+@keyframes expandir {
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+.pg {
+    /* background: #aaafaee5; */
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+}
+
+/*Header*/
+.cabeza{
+    flex-basis: 7%;
+    height: 80%;
+    /* background: #bdce25e5; */
+    flex-grow: 1;
+}
+
+.div-logo {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 20%;
+    /* background: #25d634e5; */
+}
+
+.img-logo {
+    margin: 10%;
+}
+
+/*Main*/
+.main {
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    flex-basis: 93%;
+    height: 100%;
+    flex-flow: row wrap;
+    flex-grow: 2;
+}
+
+.sec-txta-encrp-desen {
+    /* background: olivedrab; */
+    display: flex;
+    flex-direction: column;
+    flex-basis: 65%;
+    flex-flow: column wrap;
+    height: 97%;
+    margin: auto;
+
+}
+
+.div-txta-encrp-desen{
+    display: flex;
+    width: 95%;
+    flex: 5 2 auto;
+    height: 75%;
+    margin: auto;
+}
+
+#txta-encrp-desen {
+    width: 98%;
+    height: 95%;
+    margin: auto;
+    resize: none;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 0px 20px 22px rgba(0,0,0,0.48);
+    border: none;
+    outline: none;
+}
+
+.condicion{
+    position: relative;
+    width: auto;
+    height: auto;
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    font-family: 'Times New Roman', Times, serif;
+    left: 2vw;
+    /* background: hsla(34, 100%, 50%, 0.308); */
+}
+
+.div-btn {
+    /* background: #00ffD5E5; */
+    width: 40%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.btn-encriptador {
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 112px;
+    height: 47px;
+    border-width: 2px;
+    color: #306108;
+    border-color: #8a1616;
+    border-radius: 12px;
+    box-shadow: inset 0px 1px 6px 0px #efabab;
+    text-shadow: inset 0px 1px 0px #de7c7c;
+    background: linear-gradient(#ededed , #b9a1b9);
+    margin: 5%;
+}
+
+.btn-encriptador:hover {
+  background: linear-gradient(#b81111, #d42a2a);
+}
+
+.btn-desencriptador {
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 140px;
+    height: 48px;
+    border: 1px ;
+    color: #fff;
+    border-color: #c41a1a;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: inset 0px 1px 0px 0px #fbbebe;
+    text-shadow: inset 0px 1px 0px #ae4747;
+    background: linear-gradient(#ededed, #bab1ba);
+    margin: 5%;
+}
+
+.btn-desencriptador:hover {
+  background: linear-gradient(#cc5252, #e35656);
+}
+
+.sec-txta-devolucion{
+    /* background: yellow; */
+    width: 25%;
+    height: 90%;
+    margin: auto;
+    border: 9px ridge #1C6EA4;
+    border-radius: 32px;
+    box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #FF0000, 3px 0px 20px 22px rgba(0,0,0,0.48);
+    background: #FFFFFF;
+    flex-flow: column wrap;
+}
+
+.div-desaparece{
+    display: block;
+}
+
+#img-dibujo {
+    width: 90%;
+    height: auto;
+    margin: 10%;
+}
+
+#titulo-devolucion {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin: 10%;
+}
+
+#p-devolucion {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: 10%;
+}
+
+.div-txta-devolucion-btn {
+    display: none;
+    height: 100%;
+}
+
+.div-txta-resultado {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #afffD5E5; */
+}
+
+#txta-devolucion {
+    height: 95%;
+    width: 95%;
+    font-family: 'Times New Roman', Times, serif;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.div-btn-copiar{
+    /*background: #800080;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+#btn-copiar {
+    display: inline-block;
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:3px solid #d6bcd6;
+	cursor: pointer;
+	color:#3a8a9e;
+	font-family: 'Times New Roman', Times, serif;
+	font-size:21px;
+	padding:10px 32px;
+	text-decoration:none;/*¿que es?*/
+	text-shadow:0px 0px 0px #e1e2ed;
+}
+#btn-copiar:hover {
+	background:linear-gradient( #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+#btn-copiar:active {
+	position:relative;
+	top:1px;
+}
+
+footer{
+    /* background: orange; */
+    align-self: flex-end;
+    position: absolute;
+}
