@@ -2,7 +2,7 @@ let texto = document.getElementById("txta-encrp-desen");
 let textoADevolver;
 let txtaDevoolucion = document.getElementById("txta-devolucion");
 let divQueAparece = document.querySelector(".div-txta-devolucion-btn");
-let divImagenas = document.querySelector(".div-img-dibujo")
+let divImagenas = document.querySelector(".div-img-h2-p")
 
 function encriptar() {
 
@@ -19,7 +19,7 @@ function encriptar() {
         divQueAparece.style.display = "block";
         
     } else {
-        alert("No ingreso ningun texto")
+        alert("No ingreso ningun texto");
     };
 
 };

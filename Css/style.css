@@ -22,7 +22,7 @@ body {
     100%{background-position: 0 50%;}
 }
 
-.pg {
+.div-container-all {
     /* background: #aaafaee5; */
     display: flex;
     flex-flow: row wrap;
@@ -33,7 +33,7 @@ body {
 /*Header*/
 .cabeza{
     flex-basis: 7%;
-    height: 80%;
+    height: 80vh;
     /* background: #bdce25e5; */
     flex-grow: 1;
 }
@@ -42,7 +42,7 @@ body {
     position: relative;
     width: 80%;
     height: auto;
-    margin: 20%;
+    margin: 10%;
     /* background: #25d634e5; */
 }
 
@@ -54,17 +54,17 @@ body {
 .main {
     /* background: red; */
     display: flex;
-    flex-direction: row;
     flex-basis: 93%;
     height: 100%;
     flex-flow: row wrap;
     flex-grow: 2;
+    justify-content: space-evenly;
+    gap: 10px;
 }
 
 .sec-txta-encrp-desen {
     /* background: olivedrab; */
     display: flex;
-    flex-direction: column;
     flex-basis: 65%;
     flex-flow: column wrap;
     height: 97%;
@@ -157,9 +157,10 @@ body {
   background: linear-gradient(#cc5252, #e35656);
 }
 
+/*Section de devolucion*/
 .sec-txta-devolucion{
     /* background: yellow; */
-    width: 25%;
+    flex-basis: 316px;
     height: 90%;
     margin: auto;
     border: 9px ridge #1C6EA4;
@@ -169,7 +170,7 @@ body {
     flex-flow: column wrap;
 }
 
-.div-desaparece{
+.div-img-h2-p {
     display: block;
 }
 
@@ -202,7 +203,7 @@ body {
     height: 100%;
 }
 
-.div-txta-resultado {
+.div-txta-devolucion {
     height: 80%;
     display: flex;
     justify-content: center;
@@ -256,3 +257,20 @@ footer{
     align-self: flex-end;
     position: absolute;
 }
+
+@media (max-width: 768px) {
+        .cabeza{
+            height: 20vh;
+            flex-basis: 100vw;
+        }
+    
+        .div-logo{
+            width: 100vw;
+            height: 5vh;
+            margin: 5%;
+        }
+
+        .img-logo{
+            margin: auto;
+        }
+    }
