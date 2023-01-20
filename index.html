@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="Primer challenge de Oracle Next Education y Alura con JavaScript, HTML y CSS
+        El desafio consiste en construir una pagina web que encripte y desencripte texto que sera ingresado por el usuario y 
+        presentarlo en su forma encriptada o desencriptada, el objetivo de este desafio es poner a prueba los conocimientos 
+        adquiridos durante el curso Principiante en programación.">
     <link rel="stylesheet" href="Css/reset.css">
     <link rel="stylesheet" href="Css/style.css">
     <title>Encriptador</title>
@@ -20,7 +26,7 @@
         <main class="main">
             <section class="sec-txta-encrp-desen">
                 <div class="div-txta-encrp-desen">
-                    <textarea id="txta-encrp-desen"  name="Encriptar-Desencriptar" placeholder="Ingrese el texto aquí"></textarea>
+                    <textarea class="txta-encrp-desen"  name="Encriptar-Desencriptar" placeholder="Ingrese el texto aquí"></textarea>
                 </div>
                 <div class="condicion">
                     <p>Solo letras minúsculas sin acentos y sin caracteres especiales</p>
@@ -33,20 +39,20 @@
 
             <section class="sec-txta-devolucion">
                 <div class="div-img-h2-p">
-                    <img id="img-dibujo" src="img/Muñeco.png" alt=""> <!-- poner un alt -->
+                    <img class="img-dibujo" src="img/Muñeco.png" alt=""> <!-- poner un alt -->
                     
-                    <h2 id="titulo-devolucion">Ningún mensaje fue encontrado</h2>
+                    <h2 class="titulo-devolucion">Ningún mensaje fue encontrado</h2>
                     
-                    <p id="p-devolucion">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <p class="p-devolucion">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
 
                 <div class="div-txta-devolucion-btn">
                     <div class="div-txta-devolucion">
-                        <textarea id="txta-devolucion" name="mostrar-resultado" disabled></textarea>
+                        <textarea class="txta-devolucion" name="mostrar-resultado" disabled></textarea>
                     </div>
 
                     <div class="div-btn-copiar">
-                        <button id="btn-copiar">Copiar</button>
+                        <button class="btn-copiar" onclick="copyToClipboard()">Copiar</button>
                     </div>
                 </div>
             </section>

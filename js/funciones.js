@@ -1,8 +1,8 @@
-let texto = document.getElementById("txta-encrp-desen");
-let textoADevolver;
-let txtaDevoolucion = document.getElementById("txta-devolucion");
+let texto = document.querySelector(".txta-encrp-desen");
+let textoADevolver = document.querySelector(".btn-copiar");
+let txtaDevoolucion = document.querySelector(".txta-devolucion");
 let divQueAparece = document.querySelector(".div-txta-devolucion-btn");
-let divImagenas = document.querySelector(".div-img-h2-p")
+let divImagenes = document.querySelector(".div-img-h2-p")
 
 function encriptar() {
 
@@ -15,7 +15,7 @@ function encriptar() {
     if (texto.value != "" & texto.value != " ") {
         txtaDevoolucion.value = textoADevolver;
 
-        divImagenas.style.display = "none";
+        divImagenes.style.display = "none";
         divQueAparece.style.display = "block";
         
     } else {
@@ -34,11 +34,24 @@ function descencriptar() {
     if (texto.value != "" & texto.value != " ") {
         txtaDevoolucion.value = textoADevolver;
 
-        divImagenas.style.display = "none";
+        divImagenes.style.display = "none";
         divQueAparece.style.display = "block";
         
     } else {
         alert("No ingreso ningun texto")
     };
 
+};
+
+const copyToClipboard = () => {
+    navigator.permissions.query({ name: 'clipboard-write' }).then(({ state }) => {
+        if (state === 'granted' || state === 'prompt') {
+        navigator.clipboard
+            .writeText(txtaDevoolucion.value)
+            .then(() => console.log(`${txtaDevoolucion.value} was copied to clipboard`))
+            .catch(() =>
+            console.warn(`${txtaDevoolucion.value} couldn't be copied to the clipboard`)
+            );
+        }
+    });
 };
