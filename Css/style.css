@@ -80,7 +80,7 @@ body {
     margin: auto;
 }
 
-#txta-encrp-desen {
+.txta-encrp-desen {
     width: 98%;
     height: 95%;
     margin: auto;
@@ -134,7 +134,7 @@ body {
 }
 
 .btn-encriptador:hover {
-  background: linear-gradient(#b81111, #d42a2a);
+    background: linear-gradient(#b81111, #d42a2a);
 }
 
 .btn-desencriptador {
@@ -154,7 +154,7 @@ body {
 }
 
 .btn-desencriptador:hover {
-  background: linear-gradient(#cc5252, #e35656);
+    background: linear-gradient(#cc5252, #e35656);
 }
 
 /*Section de devolucion*/
@@ -174,13 +174,13 @@ body {
     display: block;
 }
 
-#img-dibujo {
+.img-dibujo {
     width: 90%;
     height: auto;
     margin: 10%;
 }
 
-#titulo-devolucion {
+.titulo-devolucion {
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 700;
@@ -189,7 +189,7 @@ body {
     margin: 10%;
 }
 
-#p-devolucion {
+.p-devolucion {
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
@@ -211,7 +211,7 @@ body {
     /* background: #afffD5E5; */
 }
 
-#txta-devolucion {
+.txta-devolucion {
     height: 95%;
     width: 95%;
     font-family: 'Times New Roman', Times, serif;
@@ -228,7 +228,7 @@ body {
     margin: 5%;
 }
 
-#btn-copiar {
+.btn-copiar {
     display: inline-block;
 	box-shadow: 3px 4px 0px 0px #899599;
 	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
@@ -243,11 +243,13 @@ body {
 	text-decoration:none;/*¿que es?*/
 	text-shadow:0px 0px 0px #e1e2ed;
 }
-#btn-copiar:hover {
+
+.btn-copiar:hover {
 	background:linear-gradient( #bab1ba 5%, #ededed 100%);
 	background-color:#bab1ba;
 }
-#btn-copiar:active {
+
+.btn-copiar:active {
 	position:relative;
 	top:1px;
 }
