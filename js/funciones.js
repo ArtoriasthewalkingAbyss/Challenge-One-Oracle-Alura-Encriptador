@@ -1,11 +1,25 @@
 let texto = document.querySelector(".txta-encrp-desen");
-let textoADevolver = document.querySelector(".btn-copiar");
+let textoADevolver;//si es posible cambiar todos los let por const;
 let txtaDevoolucion = document.querySelector(".txta-devolucion");
 let divQueAparece = document.querySelector(".div-txta-devolucion-btn");
 let divImagenes = document.querySelector(".div-img-h2-p")
 
-function encriptar() {
+function validateInput() {
+    let input = texto.value;
+    input = input.toLowerCase();
 
+    // Expresión regular para validar que solo contenga letras minúsculas sin acentos ni caracteres especiales
+    let regex = /^[a-z]+$/;
+
+    if (!regex.test(input)) {
+        alert("Solo se permiten letras minúsculas sin acentos ni caracteres especiales");
+        input = input.replace(/[^a-z]/g, "");
+    };
+
+    texto.value = input;
+};
+
+function encriptar() {
     textoADevolver = texto.value.replace(/e/gm, "enter");
     textoADevolver = textoADevolver.replace(/i/gm, "imes");
     textoADevolver = textoADevolver.replace(/o/gm, "ober");
