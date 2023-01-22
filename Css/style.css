@@ -36,6 +36,7 @@ body {
     height: 80vh;
     /* background: #bdce25e5; */
     flex-grow: 1;
+    /* order: 0; */
 }
 
 .div-logo {
@@ -60,6 +61,7 @@ body {
     flex-grow: 2;
     justify-content: space-evenly;
     gap: 10px;
+    /* order: 2; */
 }
 
 .sec-txta-encrp-desen {
@@ -99,7 +101,7 @@ body {
     width: auto;
     height: auto;
     font-style: normal;
-    color: #FFFFFF;
+    color: #F0F0F0;
     font-weight: 400;
     font-size: 15px;
     line-height: 150%;
@@ -256,9 +258,17 @@ body {
 
 footer{
     /* background: orange; */
-    align-self: flex-end;
+    /* display: flex; */
+    /* flex-basis: 7%; */
+    /* align-self: flex-end; */
     position: absolute;
+    /* order: 1; */
 }
+
+/* h3 {
+    
+    color: #e0e0e0;
+}   */
 
 @media (max-width: 768px) {
         .cabeza{
