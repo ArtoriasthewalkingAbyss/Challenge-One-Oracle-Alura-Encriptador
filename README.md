@@ -6,7 +6,11 @@
  <img src="https://emojipedia-us.s3.amazonaws.com/source/whatsapp/326/locked-with-key_1f510.png" width="50">
  </h1>
  
- ## Este repositorio contiene el código del primer desafío de Oracle Next Education, en el que se construyó una página web que encripta y desencripta texto ingresado por el usuario. El objetivo de este desafío es poner a prueba los conocimientos adquiridos durante la ruta "Principiante en programación".
+ <h2><img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/milky-way_1f30c.png" width="20">
+  Web
+ <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/milky-way_1f30c.png" width="20"></h2>
+
+  ![Web Screenshot](img/ui-mockup-web.png)
  <!--<img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/fireworks_1f386.png" width="55">
  <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/fireworks_1f386.png" width="55">
  <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/fireworks_1f386.png" width="55">
@@ -27,12 +31,13 @@
     </li>
     <li><a href="#web">Web</a></li>
     <li><a href="#redes-sociales">Redes sociales</a></li>
+    <li><a href="#agradecimientos">Agradecimientos</a></li>
   </ol>
 </details>
 
 ## Descripción del proyecto
 
-El desafio consiste en construir una pagina web que encripte y desencripte texto que sera ingresado por el usuario y presentarlo en su forma encriptada o desencriptada.
+Este repositorio contiene el código del primer desafío de Oracle Next Education, en el que se construyó una página web que encripta y desencripta texto ingresado por el usuario. El objetivo de este desafío es poner a prueba los conocimientos adquiridos durante la ruta "Principiante en programación".
 
 ## Requisitos
 
@@ -43,8 +48,8 @@ El desafio consiste en construir una pagina web que encripte y desencripte texto
 Por ejemplo:
 
 ```
-"gato" => "gaitober"
-"gaitober" => "gato"
+"tigre" => "timesgrenter"
+"timesgrenter" => "tigre"
 ```
 - La página tiene campos para inserción del texto que será encriptado o desencriptado, y el usuario puede escoger entre las dos opciones.
 - El resultado es mostrado en la pantalla.
@@ -53,8 +58,9 @@ Por ejemplo:
 - Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
 
 ## Notas
+
 - El código de este proyecto es solo para fines educativos y no debe ser utilizado para encriptar o desencriptar información confidencial.
-- Es posible que el código contenga errores o mejoras necesarias,
+- Es posible que el código contenga errores o mejoras necesarias, si deseas darme tu opinión o consejo escríbeme através de mis redes sociales.
 
 ## Tecnologías usadas
 
@@ -79,10 +85,11 @@ La página web utiliza las siguientes llaves de encriptación:
 ## Redes Sociales
 
 - [Linkedin](https://www.linkedin.com/in/agust%C3%ADn-castro-irb/)
+- [Twitter](https://twitter.com/AgustinSmaug)
 
 ## Agradecimientos
 
- - [Awesome Readme Templates]()
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme]()
-
+ - [Alura Latam](https://www.aluracursos.com/)
+ - [Oracle](https://www.oracle.com/ar/education/oracle-next-education/)
+ - [Jeanmarie Quijada](https://www.linkedin.com/in/jeanmariequijada/?original_referer=https%3A%2F%2Fwww.aluracursos.com%2F)
+ - [Génesys Rondón](https://www.linkedin.com/in/genesysrondon914762182/)
