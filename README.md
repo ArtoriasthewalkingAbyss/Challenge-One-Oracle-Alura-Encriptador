@@ -93,4 +93,3 @@ La página web utiliza las siguientes llaves de encriptación:
  - [Oracle](https://www.oracle.com/ar/education/oracle-next-education/)
  - [Jeanmarie Quijada](https://www.linkedin.com/in/jeanmariequijada/?original_referer=https%3A%2F%2Fwww.aluracursos.com%2F)
  - [Génesys Rondón](https://www.linkedin.com/in/genesysrondon914762182/)
-
