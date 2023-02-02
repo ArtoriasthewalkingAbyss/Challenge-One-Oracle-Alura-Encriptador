@@ -9,7 +9,7 @@ function validateInput() {
     input = input.toLowerCase();
 
     // Expresión regular para validar que solo contenga letras minúsculas sin acentos ni caracteres especiales
-    let regex = /^[a-z]+$/;
+    let regex = /^[a-z\s]+$/;
 
     if (!regex.test(input)) {
         alert("Solo se permiten letras minúsculas sin acentos ni caracteres especiales");

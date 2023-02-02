@@ -87,13 +87,17 @@ body {
     height: 95%;
     margin: auto;
     resize: none;
-    font-size: 15px;
+    font-size: 1.5vw;
     font-family: 'Times New Roman', Times, serif;
     justify-content: center;
     align-items: center;
     box-shadow: 3px 0px 20px 22px rgba(0,0,0,0.48);
     border: none;
     outline: none;
+}
+
+.txta-encrp-desen::placeholder {
+    font-size: 1.5vw;
 }
 
 .condicion{
@@ -217,6 +221,7 @@ body {
     height: 95%;
     width: 95%;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
     resize: none;
     border: none;
     outline: none;
